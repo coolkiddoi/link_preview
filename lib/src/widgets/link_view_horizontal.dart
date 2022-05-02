@@ -91,6 +91,7 @@ class LinkViewHorizontal extends StatelessWidget {
                                 height: 100,
                                 margin: const EdgeInsets.only(right: 5),
                                 decoration: BoxDecoration(
+                                  color: Colors.grey,
                                   image: DecorationImage(
                                     image: _img,
                                     fit: BoxFit.cover,
@@ -106,14 +107,14 @@ class LinkViewHorizontal extends StatelessWidget {
                       )
                     : const SizedBox(width: 5),
                 Expanded(
-                  flex: 4,
+                  flex: 6,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         _buildTitleContainer(_titleFontSize, 2),
-                        const SizedBox(height: 6),
+                        const SizedBox(height: 4),
                         _buildBodyContainer(_bodyFontSize, 2)
                       ],
                     ),

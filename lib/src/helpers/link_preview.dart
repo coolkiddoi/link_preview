@@ -297,11 +297,12 @@ class _AnyLinkPreviewState extends State<AnyLinkPreview> {
             : ((MediaQuery.of(context).size.height) * 0.25);
 
     Widget _loadingErrorWidget = Container(
-      height: _height,
+      height: 100,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
+        border: Border.all(width: 0.6, color: Theme.of(context).cardColor),
         borderRadius: BorderRadius.circular(widget.borderRadius ?? 12),
-        color: Colors.grey[200],
+        color: Colors.transparent,
       ),
       alignment: Alignment.center,
       child: Text(
